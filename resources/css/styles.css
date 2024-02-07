@@ -1,0 +1,179 @@
+* {
+    font-family: Inter, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    box-sizing: border-box; /* includes padding/border in width and height of elements */
+}
+
+h1 { /* my name in the title page */
+    font-size: 128px;
+}
+
+h2 { /* section titles */
+    font-size: 64px;
+    padding-left: 5%;
+    padding-top: 5%;
+}
+
+h3 { /* my title in the title page */
+    font-size: 40px;
+    font-style: italic;
+    font-weight: thin;
+}
+
+h4 { /* project titles */
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+h5 { /* emphasis lines */
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    padding: 30px 20px 0;
+    text-align: right;
+    font-size: small;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 18px;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.page {
+    height: 100vh;
+    width: 100vw;
+    display: block;
+}
+
+.half-page {
+    height: 50vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+}
+
+.nav-item {
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+.header-container {
+    margin: 15% 15%;
+}
+
+.about-container {
+    margin: 5% 12%;
+    line-height: 25px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects-container {
+    padding: 5%;
+}
+
+.project-container {
+    width: 25%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+
+.project-img {
+    width: 90%;
+    border-radius: 0 100px 0 0;
+}
+
+.project-tags {
+    margin-top: 10px;
+    font-size: smaller;
+}
+
+.project-tag {
+    border-style: solid;
+    border-radius: 50px;
+    padding: 1px 7px;
+    margin-right: 0px;
+    margin-bottom: 5px;
+}
+
+.project-text {
+    margin-top: 10px;
+}
+
+.contact-container {
+    padding: 3% 5%;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-link {
+    color: white;
+    margin: 20px 20px 0px;
+}
+
+#garden-img {
+    display: block;
+    width: 68%;
+    align-content: center;
+    border-radius: 200px 0 0 0;
+    float: left
+}
+
+#copyright {
+    display: block;
+    text-align: center;
+    font-size: smaller;
+    float: bottom;
+}
