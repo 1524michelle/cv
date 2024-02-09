@@ -23,7 +23,7 @@ h3 { /* my title in the title page */
 }
 
 h4 { /* project titles */
-    font-size: 32px;
+    font-size: 26px;
     margin-top: 10px;
 }
 
@@ -96,7 +96,12 @@ a:hover {
 }
 
 .header-container {
-    margin: 15% 15%;
+    margin: 10% 15% 5%;
+}
+
+.cv-container {
+    float: right;
+    margin: 5% 15%;
 }
 
 .about-container {
@@ -138,7 +143,7 @@ a:hover {
 .project-tag {
     border-style: solid;
     border-radius: 50px;
-    padding: 1px 7px;
+    padding: 1px 7px 2px;
     margin-right: 0px;
     margin-bottom: 5px;
 }
