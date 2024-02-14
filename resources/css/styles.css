@@ -29,7 +29,6 @@ h4 { /* project titles */
 
 h5 { /* emphasis lines */
     font-size: 20px;
-    font-weight: bold;
     margin-bottom: 20px;
 }
 
@@ -61,7 +60,6 @@ li {
 a {
     text-decoration: none;
     color: black;
-    font-weight: bold;
 }
 
 a:hover {
@@ -83,13 +81,6 @@ a:hover {
     display: block;
 }
 
-.half-page {
-    height: 50vh;
-    width: 100vw;
-    background-color: black;
-    color: white;
-}
-
 .nav-item {
     margin-left: 40px;
     margin-right: 20px;
@@ -99,13 +90,18 @@ a:hover {
     margin: 10% 15% 5%;
 }
 
+/* for intro animation */
+.intro {
+    float: left;
+}
+
 .cv-container {
     float: right;
     margin: 5% 15%;
 }
 
 .about-container {
-    margin: 5% 12%;
+    margin: 3% 12%;
     line-height: 25px;
 }
 
@@ -152,6 +148,17 @@ a:hover {
     margin-top: 10px;
 }
 
+.half-page {
+    height: 50vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+}
+
+.half-page a {
+    color: white;
+}
+
 .contact-container {
     padding: 3% 5%;
 }
@@ -181,4 +188,48 @@ a:hover {
     text-align: center;
     font-size: smaller;
     float: bottom;
+}
+
+/* hover colors: used in project tags */
+
+.pink:hover {
+    color: white;
+    background-color: pink;
+    border-color: pink;
+}
+
+.orange:hover {
+    color: white;
+    background-color: coral;
+    border-color: coral;
+}
+
+.yellow:hover {
+    color: white;
+    background-color: gold;
+    border-color: gold;
+}
+
+.green:hover {
+    color: white;
+    background-color: darkseagreen;
+    border-color: darkseagreen;
+}
+
+.green2:hover {
+    color: white;
+    background-color: yellowgreen;
+    border-color: yellowgreen;
+}
+
+.blue:hover {
+    color: white;
+    background-color: skyblue;
+    border-color: skyblue;
+}
+
+.purple:hover {
+    color: white;
+    background-color: plum;
+    border-color: plum;
 }
