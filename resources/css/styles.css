@@ -85,10 +85,33 @@ a {
     margin: 10% 15% 5%;
 }
 
-/* for intro animation */
-.intro {
-    float: left;
+/* for roller intro animation */
+.roller {
+    height: 50px;
+    line-height: 50px;
+    position: relative;
+    overflow: hidden; 
+    width: 100%;
+    display: flex;
 }
+
+.roller #rolltext {
+    position: absolute;
+    top: 0;
+    animation: slide 5s infinite;
+}
+
+@keyframes slide {
+    0%, 100% {
+      top: 0;
+    }
+    33.33% {
+      top: -50px;
+    }
+    66.66% {
+      top: -100px;    
+    }
+}  
 
 .cv-container {
     float: right;
