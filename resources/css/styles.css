@@ -132,6 +132,22 @@ a {
     align-items: center;
 }
 
+/* for about me paragraph animation */
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animate {
+    animation: slideIn 0.5s ease forwards;
+}
+
 .projects-container {
     padding: 5%;
 }

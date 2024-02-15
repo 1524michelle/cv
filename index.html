@@ -29,7 +29,6 @@
                             new grad software engineer<br/>
                             designer</br>
                             creator<br/>
-                        <!-- </span> -->
                     </div>
                 </h3>
             </div>
@@ -47,7 +46,7 @@
                 </div>
         
                 <div class="column">
-                    <div>
+                    <div id="content">
                         <h5 class="bold">I am a new grad computer science major from UC Berkeley.</h5>
                         <p>In 2022, I interned at Personalis as a Software QA Engineer expanding the automated testing codebase for their portal site UI.</p>
                         <p>In 2023, I interned at Five9 as a Software Engineer on their Cloud Platform team, working on modifying the CI/CD pipeline logic and deploying a demo application running Kubernetes pods for testing.</p>
@@ -122,6 +121,7 @@
         </div>
 
         <script>
+            // getting time of day for header page greeting
             var myDate = new Date();
             var hrs = myDate.getHours();
 
@@ -137,6 +137,38 @@
             greet = 'good evening';
 
             document.getElementById('greeting').innerHTML = greet + ' from Berkeley, CA!';
+
+            // animating about me paragraph
+            document.addEventListener("DOMContentLoaded", function() {
+                var paragraphs = document.querySelectorAll('#content p');
+                var animationDelay = 0;
+                var animated = false; // Flag to prevent repeated animation
+
+                function isInViewport(element) {
+                    var rect = element.getBoundingClientRect();
+                    return (
+                        rect.top >= 0 &&
+                        rect.left >= 0 &&
+                        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                    );
+                }
+
+                function animateParagraphs() {
+                    if (!animated && isInViewport(document.getElementById('content'))) {
+                        paragraphs.forEach(function(paragraph) {
+                            paragraph.classList.add('animate'); // Add animate class to apply animation
+                            paragraph.style['animation-delay'] = animationDelay + 's';
+                            animationDelay += 0.1; // Increase the animation delay for each paragraph
+                        });
+                        // animated = true;
+                    }
+                }
+
+                // Check if the target element is in the viewport when scrolling
+                window.addEventListener('scroll', animateParagraphs);
+            });
+
         </script>
     </body>
 </html>
